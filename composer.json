@@ -22,6 +22,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/admin_toolbar": "^1.26",
         "drupal/adminimal_admin_toolbar": "^1.9",
+        "drupal/adminimal_theme": "^1.4",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
         "drush/drush": "^9.0.0",
