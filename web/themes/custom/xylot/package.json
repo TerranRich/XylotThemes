@@ -1,0 +1,31 @@
+{
+  "name": "xylot",
+  "version": "7.0.0",
+  "description": "The Xylot theme for Drupal",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "breakpoint-sass": "^2.6.1",
+    "browser-sync": "^2.9.3",
+    "compass-mixins": "^0.12.7",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1",
+    "singularitygs": "^1.6.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-livereload": "^4.0.1",
+    "gulp-strip-css-comments": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-uncss": "^1.0.3",
+    "modularscale-sass": "^3.0.8",
+    "node-sass-globbing": "0.0.23"
+  },
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
