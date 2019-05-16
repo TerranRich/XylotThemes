@@ -5,3 +5,4 @@ Edit 2: Added a log to the hook, seeing if THAT appears remotely.
 Edit 3: I tried renaming the hook from post-receive to post-update.
 Edit 4: Trying `unset GIT_DIR` advice.
 Edit 5: The hook runs fine when run from the server CLI. Trying again.
+Edit 6: Added some echo's to debug.
