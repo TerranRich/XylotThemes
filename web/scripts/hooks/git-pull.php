@@ -6,7 +6,7 @@ if (@$_POST['repository']) {
     shell_exec( `cd /var/www/xylot/v7/ && git reset --hard HEAD && git pull && drush cr` );
   }
   else {
-    error_log('Invalid information given in GitHub payload (' . __FILE__ . ')');
+    error_log('Invalid information passed to GitHub payload (' . __FILE__ . ')');
   }
 }
 else {
