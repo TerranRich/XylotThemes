@@ -5,3 +5,6 @@
 if ($_POST['payload']) {
   shell_exec( `cd /var/www/xylot/v7/ && git reset --hard HEAD && git pull && drush cr` );
 }
+else {
+  die('No payload given. This sucks.');
+}
