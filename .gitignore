@@ -22,3 +22,8 @@ web/sites/simpletest
 
 # Ignore .env files as they are personal
 .env
+
+# Ignore the default SQL database dumps
+*.sql
+*.sql.gz
+/db-backups/
