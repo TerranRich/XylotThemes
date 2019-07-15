@@ -27,3 +27,5 @@ web/sites/simpletest
 *.sql
 *.sql.gz
 /db-backups/
+pull-db.sh
+dump-db.sh
