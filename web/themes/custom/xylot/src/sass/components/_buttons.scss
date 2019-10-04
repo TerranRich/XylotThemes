@@ -2,4 +2,40 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-// ...
+.button {
+  background-color: transparent;
+  border-radius: 1rem;
+  border: 1px solid c('primary');
+  color: c('primary');
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  margin-left: 0.5rem;
+
+  &.primary {
+    border-color: c('primary');
+    color: c('primary');
+
+    &:hover,
+    &:active {
+      background-color: c('primary');
+    }
+
+  } //\\ .button.primary
+
+  &.secondary {
+    border-color: c('silver');
+    color: c('silver');
+
+    &:hover,
+    &:active {
+      background-color: c('silver');
+    }
+
+  } //\\ .button.secondary
+
+  &:hover,
+  &:active {
+    color: c('jet');
+  }
+
+} //\\ .button

@@ -31,3 +31,62 @@
     @content;
   }
 }
+
+// Return a color code, given its color key (e.g. "black")
+@function c($key: 'black') {
+  @return map-get($colors, $key);
+}
+
+// Generate a background color style
+@mixin bg($color-name, $prefix: '') {
+  .#{$prefix}#{$color-name} {
+    background-color: c($color-name);
+  }
+}
+
+// Generate a text color style
+@mixin fg($color-name, $prefix: '') {
+  .#{$prefix}#{$color-name} {
+    color: c($color-name);
+  }
+}
+
+// Generate a border style
+@mixin bd(
+  $color-name,
+  $prefix: '',
+  $border-size: 1px,
+  $border-style: solid
+) {
+  .#{$prefix}#{$color-name} {
+    border: $border-size $border-style c($color-name);
+  }
+}
+
+// Generate a proper text outline, using 4 overlapping text-shadows
+@mixin text-outline($width: 1px, $blur: 0px, $color: c('black')) {
+  $width-neg: 0 - $width;
+  & {
+    text-shadow:
+      // corners
+      $width $width $blur $color,
+      $width-neg $width $blur $color,
+      $width $width-neg $blur $color,
+      $width-neg $width-neg $blur $color,
+      // edges
+      0 $width $blur $color,
+      $width 0 $blur $color,
+      0 $width-neg $blur $color,
+      $width-neg 0 $blur $color;
+  }
+}
+
+// Generate a set of list item styles that generates the given bullet
+@mixin li-bullet-unicode($class-name, $content: '•') {
+  &.#{$class-name} li:before {
+    content: $content;
+  }
+  & li.#{$class-name}:before {
+    content: $content;
+  }
+}

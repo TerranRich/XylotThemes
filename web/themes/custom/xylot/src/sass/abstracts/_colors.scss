@@ -1,0 +1,82 @@
+// All colors go here
+$colors: (
+  'finch':     #535A3F, // near-white
+  'blanca':    #F8FBEF, // near-black
+
+  'primary':   #8DB600, // X green
+  'secondary': #8C9569, // X olive
+  'alt':       #89006F, // purple
+  'crucial':   #D7546B, // red
+  'important': #E98F32, // fire/orange
+  'interest':  #00C5FF, // sky/aqua
+  'success':   #3E9E72, // chateau
+
+  // Nice grays
+  'bud':       #AAAD9B, // light
+  'kelp':      #454839, // dark
+
+  // Pure grays
+  'black':     #000000,
+  'jet':       #333333,
+  'charcoal':  #474747,
+  'slate':     #666666,
+  'gray':      #808080,
+  'smoke':     #999999,
+  'silver':    #CCCCCC,
+  'white':     #FFFFFF,
+
+  // TODO: Separate "sub-scheme" colors into their own maps. This will
+  // allow us to define sub-scheme classes like "box-banana", so we
+  // can automatically pull in the right color shades within that sub-
+  // scheme map. So something like `.box-mint` could serve the same
+  // purpose as `.bg-frost.txt-madras`. Similarly, `.box-mint a` would
+  // automatically replace `.txt-salem`, and so on.
+
+  // Melon colors
+  'flurry':   hsb(50, 20, 100), // Snow Flurry
+  'reef':     hsb(50, 40, 100),
+  'sulu':     hsb(50, 60, 95),
+  'apple':    hsb(50, 70, 72),
+  'dell':     hsb(50, 82, 40),
+  'deep-fir': hsb(50, 95, 20),  // Deep Fir
+
+  // Mint colors
+  'frost':    hsb(150, 10, 100), // Frosted Mint
+  'aqua':     hsb(150, 40, 98),  // Aquamarine
+  'clover':   hsb(150, 60, 85),
+  'meadow':   hsb(150, 82, 65),
+  'salem':    hsb(150, 95, 47),
+  'hunter':   hsb(150, 100, 30),
+
+  // Plum colors
+  'lily':     hsb(200, 10, 100), // Lily White
+  'blizzard': hsb(200, 30, 95),  // Blizzard Blue
+  'picton':   hsb(200, 60, 90),  // Picton Blue
+  'jelly':    hsb(200, 75, 70),  // Jelly Bean
+  'atoll':    hsb(200, 90, 47),
+  'daintree': hsb(200, 97, 24),
+
+  // Berry colors
+  'pippin':    hsb(350, 10, 100),
+  'mauve':     hsb(350, 40, 95),  // Mauvelous
+  'cranberry': hsb(350, 60, 85),
+  'mex-red':   hsb(350, 80, 65),  // Mexican Red
+  'burgundy':  hsb(350, 95, 45),  // Dark Burgundy
+  'temptress': hsb(350, 100, 20),
+
+  // Semi-transparent
+  'black-90pct': rgba(0, 0, 0, 0.90),
+  'black-80pct': rgba(0, 0, 0, 0.80),
+  'black-3-qtr': rgba(0, 0, 0, 0.75),
+  'black-75pct': rgba(0, 0, 0, 0.75),
+  'black-70pct': rgba(0, 0, 0, 0.70),
+  'black-60pct': rgba(0, 0, 0, 0.60),
+  'black-50pct': rgba(0, 0, 0, 0.50),
+  'black-half':  rgba(0, 0, 0, 0.50),
+  'black-40pct': rgba(0, 0, 0, 0.40),
+  'black-30pct': rgba(0, 0, 0, 0.30),
+  'black-25pct': rgba(0, 0, 0, 0.25),
+  'black-1-qtr': rgba(0, 0, 0, 0.25),
+  'black-20pct': rgba(0, 0, 0, 0.20),
+  'black-10pct': rgba(0, 0, 0, 0.10),
+);
